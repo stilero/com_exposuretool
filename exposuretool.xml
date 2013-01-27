@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="component" method="upgrade">
+	<name>Exposure Tool</name>
+	<author>Daniel Eliasson (joomla@stilero.com)</author>
+	<creationDate>2013-jan-27</creationDate>
+	<copyright>Copyright (c) 2013-jan-27 Stilero Webdesign (www.stilero.com). All rights reserved.</copyright>
+	<authorEmail>joomla@stilero.com</authorEmail>
+	<authorUrl>www.stilero.com</authorUrl>
+	<version>1.0</version>
+	<license>GPLv2</license>
+	<description>An exposure companion tool</description>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>exposuretool.php</filename>
+                <filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+	</files>
+        <media destination="exposuretool">
+            <folder>assets/js</folder>
+            <folder>assets/img</folder>
+            <folder>assets/css</folder>
+        </media>
+	<languages folder="language">
+            <language tag="en-GB">site/language/en-GB.com_exposuretool.ini</language>
+            <language tag="sv-SE">site/language/sv-SE.com_exposuretool.ini</language>
+            <language tag="en-GB">site/language/en-GB.com_exposuretool.sys.ini</language>
+            <language tag="sv-SE">site/language/sv-SE.com_exposuretool.sys.ini</language>
+        </languages>
+	<!-- Standard plugin parameters for Joomla! 1.6+ -->
+        <config>
+            <fields name="params">
+                    <fieldset name="settings" label="COM_EXPOSURETOOL_SETTINGS">
+                            <field name="custom_field" type="customfieldname" default="" label="COM_EXPOSURETOOL_PARAMNAME" description="COM_EXPOSURETOOL_PARAMNAME_DESC"/>
+                            <field name="param_name" type="text"  default="" label="COM_EXPOSURETOOL_PARAMNAME" description="COM_EXPOSURETOOL_PARAMNAME_DESC"/>
+                            <field name="param_name2" type="radio" default="1" label="COM_EXPOSURETOOL_PARAMNAME2" description="COM_EXPOSURETOOL_PARAMNAME2_DESC">
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                            </field>
+                            <field type="spacer" default="COM_EXPOSURETOOL_SPACER"/>
+                    </fieldset>
+                    <fieldset name="other" label="COM_EXPOSURETOOL_FIELDSET">
+                            <field name="param_name" type="text"  default="" label="COM_EXPOSURETOOL_PARAMNAME" description="COM_EXPOSURETOOL_PARAMNAME_DESC"/>
+                            <field name="param_name2" type="radio" default="1" label="COM_EXPOSURETOOL_PARAMNAME2" description="COM_EXPOSURETOOL_PARAMNAME2_DESC">
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                            </field>
+                            <field type="spacer" default="COM_EXPOSURETOOL_SPACER"/>
+                    </fieldset>
+            </fields>
+        </config>
+	<administration>
+
+	</administration>
+</extension>
